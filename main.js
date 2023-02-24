@@ -7,10 +7,11 @@ var intervalperS = localStorage.interval
 booba_size = localStorage.getItem('boobaSize');
 boobasub = localStorage.boobaSize
 i = booba_size
+console.log(i)
 if(i == null){
     localStorage.boobaSize = 0
 }else{
-    i = booba_size
+    i = localStorage.boobaSize
 }
 
 i = parseInt(booba_size)
