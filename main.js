@@ -25,7 +25,7 @@ var booba_size = localStorage.getItem('boobaSize');
 var boobasub = localStorage.boobaSize
 var click = 0;
 
-clicks = parseInt(localStorage.getItem('boobaSize'));
+    click = parseInt(localStorage.getItem('boobaSize'));
   $("#counter").text(localStorage.getItem('boobaSize'));
 
 
