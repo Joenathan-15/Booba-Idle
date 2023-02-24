@@ -1,0 +1,10 @@
+.logo{
+    width: 50px;
+}
+.pause,.start{
+    width: 50px;
+    transition: 0s ease 0s;
+}
+.items-shop{
+    width: 40px;
+}
