@@ -4,24 +4,30 @@ $('#pause').hide();
 const isactive = false
 var interval = null
 var intervalperS = localStorage.interval
-booba_size = localStorage.getItem('boobaSize');
-boobasub = localStorage.boobaSize
-i = booba_size
-console.log(i)
-if(i == null){
-    localStorage.boobaSize = 0
-}else{
-    i = localStorage.boobaSize
-}
 
-i = parseInt(booba_size)
-$("#counter").text(booba_size);
+
 
 if(localStorage.interval <= 1000){
     localStorage.interval = localStorage.interval
 }else{
     localStorage.interval = 2000
 }
+
+
+if(localStorage.boobaSize == undefined){
+    localStorage.boobaSize = 0
+}else{
+    localStorage.boobaSize = localStorage.boobaSize
+}
+// console.log(localStorage.boobaSize)
+
+var booba_size = localStorage.getItem('boobaSize');
+var boobasub = localStorage.boobaSize
+var click = 0;
+
+clicks = parseInt(localStorage.getItem('boobaSize'));
+  $("#counter").text(localStorage.getItem('boobaSize'));
+
 
 
 if(booba_size >= 500){
@@ -96,9 +102,9 @@ function on(isactive) {
 function fw(isactive) {
     if(isactive == true){
         interval =  setInterval(function(){
-            i++
-            localStorage.boobaSize = i;
-        $('#counter').text(i)
+            click += 1
+            localStorage.boobaSize = click;
+        $('#counter').text(click)
      }, intervalperS )
     //  console.log(isactive);
     }
