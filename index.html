@@ -12,14 +12,14 @@
     <header>
       <div class="header bg-zinc-800 grid grid-rows-1 grid-cols-3">
         <div class="logo-div">
-          <img class="logo mx-10" src="/assets/logo/logo.svg" alt="" />
+          <img id="image-show" class="logo mx-10" src="/assets/logo/logo.svg" alt="" />
         </div>
         <div class="title-div mx-auto">
-          <h3 class="text-lg">Booba Idle</h3>
+          <h3 id="back" class="text-lg">Booba Idle</h3>
         </div>
       </div>
     </header>
-    <main>
+    <main id="main-content">
       <div
         class="main-content rounded-md mt-10 mx-9 bg-zinc-600 grid grid-cols-2 gap-4"
       >
@@ -47,7 +47,7 @@
         <div class="div-2">
             <div class="text-center">
             <h1 class="text-3xl" >Shop</h1>
-            <div class="my-5 grid grid-cols-2 gap-2">
+            <div id="items-storage-1" class="my-5 grid grid-cols-2 gap-2">
                 <div id="item-1" class="bg-zinc-700 py-2 mx-5"><img class="items-shop mx-auto" src="/assets/logo/lock.svg" alt=""></div>
                 <div id="item-2" class="bg-zinc-700 py-2 mx-5"><img class="items-shop mx-auto" src="/assets/logo/lock.svg" alt=""></div>
                 <div id="item-3" class="bg-zinc-700 py-2 mx-5"><img class="items-shop mx-auto" src="/assets/logo/lock.svg" alt=""></div>
@@ -55,9 +55,27 @@
                 <div id="item-5" class="bg-zinc-700 py-2 mx-5"><img class="items-shop mx-auto" src="/assets/logo/lock.svg" alt=""></div>
                 <div id="item-6" class="bg-zinc-700 py-2 mx-5"><img class="items-shop mx-auto" src="/assets/logo/lock.svg" alt=""></div>
                 <div id="item-7" class="bg-zinc-700 py-2 mx-5"><img class="items-shop mx-auto" src="/assets/logo/lock.svg" alt=""></div>   
+                <div id="items-storage-2-btn" class="bg-zinc-700 py-2 mx-5"><img class="items-shop mx-auto" src="/assets/logo/shopping_basket.svg" alt=""></div>   
             </div>
         </div>
         </div>
+      </div>
+    </main>
+    <main id="rebirth-shop">
+      <div class="main-content rounded-md mt-10 mx-9 bg-zinc-600 grid grid-cols-1 gap-4">
+        <div class="div-2">
+          <div class="text-center">
+          <h1 class="text-3xl">Rebirth Shop</h1>
+          <div id="items-storage-1" class="my-5 grid grid-cols-3 gap-2">
+              <div id="p-item-1" class="bg-zinc-700 py-2 mx-5"><img class="items-shop mx-auto" src="/assets/logo/lock.svg" alt=""></div>
+              <div id="p-item-2" class="bg-zinc-700 py-2 mx-5"><img class="items-shop mx-auto" src="/assets/logo/lock.svg" alt=""></div>
+              <div id="p-item-3" class="bg-zinc-700 py-2 mx-5"><img class="items-shop mx-auto" src="/assets/logo/lock.svg" alt=""></div>
+              <div id="p-item-4" class="bg-zinc-700 py-2 mx-5"><img class="items-shop mx-auto" src="/assets/logo/lock.svg" alt=""></div>
+              <div id="p-item-5" class="bg-zinc-700 py-2 mx-5"><img class="items-shop mx-auto" src="/assets/logo/lock.svg" alt=""></div>
+              <div id="p-item-6" class="bg-zinc-700 py-2 mx-5"><img class="items-shop mx-auto" src="/assets/logo/lock.svg" alt=""></div>
+              <div id="p-item-7" class="bg-zinc-700 py-2 mx-5"><img class="items-shop mx-auto" src="/assets/logo/lock.svg" alt=""></div>   
+              <div id="items-storage-1-btn" class="bg-zinc-700 py-2 mx-5"><img class="items-shop mx-auto" src="/assets/logo/left_2.svg" alt="Back"></div>   
+          </div>
       </div>
     </main>
   </body>
@@ -66,5 +84,7 @@
     integrity="sha256-ZwqZIVdD3iXNyGHbSYdsmWP//UBokj2FHAxKuSBKDSo="
     crossorigin="anonymous"
   ></script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <script src="shopmecanic.js"></script>
   <script src="main.js"></script>
 </html>
